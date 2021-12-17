@@ -154,4 +154,8 @@ HighScore.get_players(score_map)
 
 ### Created by
 
+- @gerald-annan
+
+### Created by
+
 - @neenjaw

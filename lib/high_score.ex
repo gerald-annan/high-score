@@ -23,7 +23,7 @@ defmodule HighScore do
     # Please implement the update_score/3 function
     case Map.get(scores, name) do
       nil -> Map.put_new(scores, name, score)
-      old_score -> Map.put(scores, name, old_score + score)
+      _ -> Map.update(scores, name, 0, fn old_score -> old_score + score end)
     end
   end
 
